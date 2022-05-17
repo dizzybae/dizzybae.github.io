@@ -16,11 +16,11 @@ button1.onclick = function () {
     }
     img.src = imgArr[index];
 
-     //主题色改变
+   
 
 
 }
-
+  //主题色改变
     $(document).ready(function () {
         var flag=1;
         $("#switchTheme").click(function () {
@@ -38,34 +38,8 @@ button1.onclick = function () {
             }}
     
     );
-        let current = $(".page.active");
         
-        $(".item").on("click", function (ele) {
-
-            console.log($(ele).attr("data-target"));
-            let target = $("#"+$(ele).attr("data-target");
-let that=$(this);
-/*
-            if (target.hasClass('active')) {
-                return;
-            }
-            */
-
-            current.animate({
-                marginTop: "100%",
-            },
-                800,
-                "swing",
-                function () {
-                    $(".item.active").removeClass('active');
-                    that.addClass('active');
-                    current.removeClass('active');
-                    current.css("margin-top", 0);
-                    target.addClass('active');
-                    current = target;
-                }
-            );
-        });
+        
     });
     
  
